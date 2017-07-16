@@ -6,12 +6,12 @@ public class ColideController : MonoBehaviour {
 
     private float moveHorizontal, moveVertical;
 
-    private bool attached;
+    //private bool attached;
 
     // Use this for initialization
     void Start () {
 
-        attached = false;
+        //attached = false;
 
 	}
 
@@ -32,8 +32,8 @@ public class ColideController : MonoBehaviour {
         if (other.gameObject.CompareTag("Player"))
         {
             
-            Debug.Log("attached!");
-            attached = true;
+            //Debug.Log("attached!");
+            //attached = true;
         }
     }
 }

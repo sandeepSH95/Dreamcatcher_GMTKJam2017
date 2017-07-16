@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class heart0 : MonoBehaviour {
 
-    SpriteRenderer renderer;
+    SpriteRenderer h_renderer;
 
     GameObject red_rope;
 
@@ -12,9 +12,9 @@ public class heart0 : MonoBehaviour {
     void Start()
     {
         red_rope = GameObject.FindWithTag("red_rope");
-        renderer = gameObject.GetComponent<SpriteRenderer>();
+        h_renderer = gameObject.GetComponent<SpriteRenderer>();
 
-        renderer.color = new Color(0.839f, 0.286f, 0.2f, 0f);
+        h_renderer.color = new Color(0.839f, 0.286f, 0.2f, 0f);
 
         //StartCoroutine("fadeIn");
     }
@@ -23,7 +23,7 @@ public class heart0 : MonoBehaviour {
     {
 
         yield return new WaitForSeconds(0.5f);
-        renderer.color = new Color(0.839f, 0.286f, 0.2f, 1f);
+        h_renderer.color = new Color(0.839f, 0.286f, 0.2f, 1f);
 
     }
     // Update is called once per frame

@@ -7,18 +7,27 @@ public class RopeStatus : MonoBehaviour {
 
     public bool rope_cut = false;
     public bool trigger = false;
+    public bool black;
     private bool shouted;
+
+    private GameObject counters;
 
 	// Use this for initialization
 	void Start () {
         shouted = false;
+        counters = GameObject.FindWithTag("counters");
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (shouted == false && rope_cut == true)
         {
-            Debug.Log("Rope Cut!");
+            if (black == true)
+            {
+                counters.GetComponent<Counters_int>().black_ropes_cut ++;
+            }
+            shouted = true;
+            //Debug.Log("Rope Cut!");
 
             //if (trigger == true)
             //{

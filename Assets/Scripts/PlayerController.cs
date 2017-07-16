@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour {
 
     private float moveHorizontal, moveVertical;
 
-    private bool holding_rope;
+
 
     //GameObject UI_canvas = GameObject.FindWithTag("UI_canvas");
 
@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour {
         rb2d = GetComponent<Rigidbody2D> ();
         //Debug.Log("Hello!");
 
-        holding_rope = false;
+
         cutting = false;
 
 	}
@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour {
     {
         // if collides with anything with the tag "rope_handle"
         if (other.gameObject.CompareTag("rope_handle")) {
-            Debug.Log("hit!");
+            //Debug.Log("hit!");
             
         }
     }

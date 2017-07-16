@@ -49,7 +49,7 @@ public class Font_changes : MonoBehaviour {
         yield return new WaitForSeconds(1f);
         if (red_rope.GetComponent<RopeStatus>().rope_cut != true)
         {
-            thrust_text.text = "PRESS";
+            thrust_text.text = "HOLD";
         }
         yield return new WaitForSeconds(0.5f);
         if (red_rope.GetComponent<RopeStatus>().rope_cut != true)
@@ -103,9 +103,9 @@ public class Font_changes : MonoBehaviour {
     {
         thrust_text.text = "CHICKEN DINNER";
         yield return new WaitForSeconds(0.7f);
-        thrust_text.text = "GET";
-        yield return new WaitForSeconds(0.5f);
-        thrust_text.text = "READY";
+        //thrust_text.text = "GET";
+        //yield return new WaitForSeconds(0.5f);
+        thrust_text.text = "READY?";
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("level2");
     }

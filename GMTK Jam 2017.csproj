@@ -78,20 +78,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Font_changes_2.cs" />
+    <Compile Include="Assets\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\ColideController.cs" />
+    <Compile Include="Assets\Scripts\Counters_int.cs" />
+    <Compile Include="Assets\Scripts\DeathMenu.cs" />
     <Compile Include="Assets\Scripts\Font_changes.cs" />
+    <Compile Include="Assets\Scripts\Font_changes_2.cs" />
     <Compile Include="Assets\Scripts\LinkCollideController.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\PlayerAnimation.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\RopeStatus.cs" />
+    <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\anchor_rotate.cs" />
+    <Compile Include="Assets\Scripts\black_ropes_cut.cs" />
     <Compile Include="Assets\Scripts\heart0.cs" />
+    <Compile Include="Assets\Scripts\heart1.cs" />
+    <Compile Include="Assets\Scripts\heart2.cs" />
+    <Compile Include="Assets\Scripts\heart3.cs" />
+    <Compile Include="Assets\Scripts\heart_life.cs" />
     <Compile Include="Assets\Scripts\rotate_dodecagon.cs" />
-    <Compile Include="Assets\heart1.cs" />
-    <Compile Include="Assets\heart2.cs" />
-    <Compile Include="Assets\heart3.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

@@ -20,10 +20,10 @@ public class LinkCollideController : MonoBehaviour {
 
             if (player.GetComponent<PlayerController>().cutting == true)
             {
-                Debug.Log("link collided!");
+                //Debug.Log("link collided!");
                 var joint = gameObject.GetComponent<HingeJoint2D>();
                 Destroy(joint);
-                Debug.Log("cut!");
+                //Debug.Log("cut!");
 
                 joined = false;
 

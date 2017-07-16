@@ -1,0 +1,38 @@
+Initialize engine version: 5.6.1f1 (2860b30f0b54)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
+    Vendor:   NVIDIA
+    VRAM:     4059 MB
+    Driver:   22.21.13.8233
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Public\Documents\Unity Projects\GMTK Jam 2017\tgm264_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\GMTK Jam 2017\tgm264_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\GMTK Jam 2017\tgm264_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\GMTK Jam 2017\tgm264_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\GMTK Jam 2017\tgm264_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\GMTK Jam 2017\tgm264_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\GMTK Jam 2017\tgm264_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\GMTK Jam 2017\tgm264_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\GMTK Jam 2017\tgm264_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\GMTK Jam 2017\tgm264_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.021 seconds
+Platform assembly: C:\Users\Public\Documents\Unity Projects\GMTK Jam 2017\tgm264_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Public\Documents\Unity Projects\GMTK Jam 2017\tgm264_Data\Managed\System.dll (this message is harmless)
+desktop: 2560x1440 59Hz; virtual: 3840x1449 at -1280,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.871460 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.352025 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 4506.
+Total: 0.948309 ms (FindLiveObjects: 0.307997 ms CreateObjectMapping: 0.039925 ms MarkObjects: 0.593181 ms  DeleteObjects: 0.006304 ms)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 319c -> priority: 1 
+  Thread -> id: 3134 -> priority: 1 
+  Thread -> id: 26d8 -> priority: 1 
+  Thread -> id: 31a4 -> priority: 1 
