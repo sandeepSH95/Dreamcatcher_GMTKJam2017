@@ -20,18 +20,30 @@ public class RopeStatus : MonoBehaviour {
         {
             Debug.Log("Rope Cut!");
 
-            if (trigger == true)
-            {
-                StartCoroutine(Wait_success());
-                SceneManager.LoadScene("level2");
-            }
+            //if (trigger == true)
+            //{
+            //    StartCoroutine("wait_success()");
+                
+            //}
             
         }
         
 	}
 
-    IEnumerator Wait_success()
-    {
-        yield return new WaitForSeconds(5);
-    }
+    //IEnumerator wait_success()
+    //{
+        //thrust_text.text = "CHICKEN DINNER";
+        //yield return new WaitForSeconds(0.7f);
+        //thrust_text.text = "GET";
+        //yield return new WaitForSeconds(0.5f);
+        //thrust_text.text = "READY";
+        //yield return new WaitForSeconds(0.5f);
+        //thrust_text.text = "3...";
+        //yield return new WaitForSeconds(1f);
+        //thrust_text.text = "2...";
+        //yield return new WaitForSeconds(1f);
+        //thrust_text.text = "1...T";
+    //    yield return new WaitForSeconds(5f);
+    //    SceneManager.LoadScene("level2");
+    //}
 }

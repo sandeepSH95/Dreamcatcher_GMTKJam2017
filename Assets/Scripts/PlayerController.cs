@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour {
 
     private bool holding_rope;
 
-    GameObject UI_canvas = GameObject.FindWithTag("UI_canvas");
+    //GameObject UI_canvas = GameObject.FindWithTag("UI_canvas");
 
     // Use this for initialization
     void Start ()
@@ -36,18 +36,18 @@ public class PlayerController : MonoBehaviour {
             //Component thrust_text = UI_canvas.GetComponent<thrust_cut>();
             cutting = true;
             SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer>();
-            renderer.color = new Color(0f, 0f, 0f, 1f);
+            renderer.color = Color.white;
 
             moveHorizontal = Input.GetAxis("Horizontal");
             moveVertical = Input.GetAxis("Vertical");
             Vector2 movement = new Vector2(moveHorizontal, moveVertical);
             rb2d.AddForce(movement * speed);
         }
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (!Input.GetKey(KeyCode.Space))
         {
             cutting = false;
             SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer>();
-            renderer.color = new Color(206, 255, 26);
+            renderer.color = Color.black;
         }
 
         //if (Input.GetKey(KeyCode.Space))
