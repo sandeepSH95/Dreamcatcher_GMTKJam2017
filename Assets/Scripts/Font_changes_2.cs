@@ -2,17 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 
 public class Font_changes_2 : MonoBehaviour {
 
     GameObject player;
+    GameObject red_rope;
 
     Text thrust_text;
 
     // Use this for initialization
     void Start()
     {
+        red_rope = GameObject.FindWithTag("red_rope");
         thrust_text = GameObject.Find("thrust_cut").GetComponent<Text>();
         player = GameObject.FindWithTag("Player");
 
@@ -21,15 +25,35 @@ public class Font_changes_2 : MonoBehaviour {
 
     IEnumerator cutTheRope()
     {
-        thrust_text.text = "FREEZE!";
+        if (red_rope.GetComponent<RopeStatus>().rope_cut != true)
+        {
+            thrust_text.text = "FREEZE!";
+        }
         yield return new WaitForSeconds(1f);
-        thrust_text.text = "BLACK";
+        if (red_rope.GetComponent<RopeStatus>().rope_cut != true)
+        {
+            thrust_text.text = "BLACK";
+        }
         yield return new WaitForSeconds(0.5f);
-        thrust_text.text = "WIRES";
+        if (red_rope.GetComponent<RopeStatus>().rope_cut != true)
+        {
+            thrust_text.text = "WIRES";
+        }
         yield return new WaitForSeconds(0.5f);
-        thrust_text.text = "LOSE";
+        if (red_rope.GetComponent<RopeStatus>().rope_cut != true)
+        {
+            thrust_text.text = "BREAK";
+        }
         yield return new WaitForSeconds(0.5f);
-        thrust_text.text = "THRUST/CUT";
+        if (red_rope.GetComponent<RopeStatus>().rope_cut != true)
+        {
+            thrust_text.text = "YOUR <3";
+        }
+        yield return new WaitForSeconds(1f);
+        if (red_rope.GetComponent<RopeStatus>().rope_cut != true)
+        {
+            thrust_text.text = "THRUST/CUT";
+        }
     }
 
     // Update is called once per frame
@@ -46,5 +70,19 @@ public class Font_changes_2 : MonoBehaviour {
 
             //thrust_text.text = "testing";
         }
+        if (red_rope.GetComponent<RopeStatus>().rope_cut == true)
+        {
+            StartCoroutine("chicken_dinner");
+        }
+    }
+    IEnumerator chicken_dinner()
+    {
+        thrust_text.text = "ROTISSERIE";
+        yield return new WaitForSeconds(1f);
+        //thrust_text.text = "GET";
+        //yield return new WaitForSeconds(0.5f);
+        thrust_text.text = "READY?";
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("level3");
     }
 }

@@ -6,9 +6,18 @@ public class LinkCollideController : MonoBehaviour {
 
     public bool joined;
 
+    //public AudioClip cutSound;
+    //private AudioSource source;
+
+    //void Awake()
+    //{
+    //    source = GetComponent<AudioSource>();
+    //}
+
     // Use this for initialization
     void Start () {
         joined = true;
+
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -20,6 +29,7 @@ public class LinkCollideController : MonoBehaviour {
 
             if (player.GetComponent<PlayerController>().cutting == true)
             {
+                //source.PlayOneShot(cutSound, 1f);
                 //Debug.Log("link collided!");
                 var joint = gameObject.GetComponent<HingeJoint2D>();
                 Destroy(joint);

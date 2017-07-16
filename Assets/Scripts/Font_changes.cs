@@ -102,7 +102,7 @@ public class Font_changes : MonoBehaviour {
     IEnumerator chicken_dinner()
     {
         thrust_text.text = "CHICKEN DINNER";
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(1f);
         //thrust_text.text = "GET";
         //yield return new WaitForSeconds(0.5f);
         thrust_text.text = "READY?";

@@ -98,6 +98,9 @@
     <Compile Include="Assets\Scripts\heart3.cs" />
     <Compile Include="Assets\Scripts\heart_life.cs" />
     <Compile Include="Assets\Scripts\rotate_dodecagon.cs" />
+    <Compile Include="Assets\finishMenu.cs" />
+    <Compile Include="Assets\font_changes_3.cs" />
+    <Compile Include="Assets\font_changes_4.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

@@ -19,7 +19,7 @@ public class DeathMenu : MonoBehaviour {
 
         counters = GameObject.FindWithTag("counters");
 
-        timer = GameObject.FindWithTag("timer");
+        //timer = GameObject.FindWithTag("timer");
     }
 
     // Update is called once per frame
@@ -27,8 +27,9 @@ public class DeathMenu : MonoBehaviour {
 
         if (isDeath)
         {
-            DeathMenuCanvas.SetActive(true);
             Time.timeScale = 0f;
+            DeathMenuCanvas.SetActive(true);
+            
         }
         else
         {
@@ -46,7 +47,7 @@ public class DeathMenu : MonoBehaviour {
 
     public void Restart ()
     {
-        timer.GetComponent<Timer>().startTime = Time.time;
+        //timer.GetComponent<Timer>().startTime = Time.time;
         SceneManager.LoadScene("Main");
     }
 
